@@ -69,11 +69,7 @@
 	    include 'resources/views/layouts/footer.php';
 	?>
 
-
 </div>
 
-<?php
-    require 'resources/views/layouts/footer_scripts.php';
-?>
 </body>
 </html>
