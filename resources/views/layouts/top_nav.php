@@ -10,7 +10,7 @@
 		  </a>
 		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		    <a class="dropdown-item" href="/centric_project/resources/views/attendance/index.php">Register Attendance</a>
-		    <a class="dropdown-item" href="#">View Report</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/reports/index.php">View Daily Report</a>
 		    <a class="dropdown-item" href="#">Daily Attendance Chart</a>
 		  </div>
 		</span>

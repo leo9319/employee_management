@@ -39,6 +39,18 @@
 			return $salaries;
 		}
 
+		public function getAttendance($employee_id, $date)
+		{
+			$sql = "SELECT A.date FROM attendances AS A JOIN employees AS E ON A.employee_id = E.id WHERE A.employee_id = $employee_id";
+			$attendances = array();
+			$query = mysqli_query($this->connection, $sql);
+			while($row = mysqli_fetch_assoc($query)) {
+				$attendances[] = $row;
+			}
+
+			return $attendances;
+		}
+
 	}
 
 	$obj = new Employee;
