@@ -95,12 +95,13 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                <form method="POST" action="../../../app/employee.php">
                 <div class="modal-body">
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" placeholder="Full Name" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -108,13 +109,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Position</label>
-                                <input type="text" name="position" class="form-control">
+                                <input type="text" name="position" placeholder="Position" class="form-control" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Department</label>
-                                <input type="text" name="department" class="form-control">
+                                <input type="text" name="department" placeholder="Department" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -122,13 +123,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Date Joined</label>
-                                <input type="date" name="date_joined" class="form-control">
+                                <input type="date" name="date_joined" class="form-control" required>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label>Emergency Contact</label>
-                                <input type="text" name="department" class="form-control">
+                                <input type="text" name="emergency_contact" placeholder="Emergency Contact" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -136,7 +137,7 @@
                         <div class="col">
                             <div class="form-group">
                                 <label>NID</label>
-                                <input type="text" name="nid" class="form-control">
+                                <input type="text" name="nid" placeholder="NID" class="form-control" required>
                             </div>
                         </div>
                     </div>
@@ -144,15 +145,16 @@
                         <div class="col">
                             <div class="form-group">
                                 <label>Address</label>
-                                <textarea class="form-control" rows="2"></textarea>
+                                <textarea name="address" placeholder="Your Address Here..." class="form-control" required rows="2"></textarea>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="submit" name="submit" class="btn btn-primary">Save changes</button>
                 </div>
+                </form>
             </div>
         </div>
     </div>
