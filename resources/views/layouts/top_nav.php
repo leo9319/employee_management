@@ -11,7 +11,7 @@
 		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 		    <a class="dropdown-item" href="/centric_project/resources/views/attendance/index.php">Register Attendance</a>
 		    <a class="dropdown-item" href="/centric_project/resources/views/reports/index.php">View Daily Report</a>
-		    <a class="dropdown-item" href="#">Daily Attendance Chart</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/reports/bar.php">Attendance Bar Chart</a>
 		  </div>
 		</span>
         <a class="p-2 text-dark" href="/centric_project/resources/views/salary/index.php">Salary</a>
