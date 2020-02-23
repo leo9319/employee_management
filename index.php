@@ -71,5 +71,8 @@
 
 </div>
 
+<?php
+    include 'resources/views/layouts/footer_scripts.php';
+?>
 </body>
 </html>

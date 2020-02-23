@@ -7,11 +7,11 @@ class Database
 	{
 		$this->connection = mysqli_connect("localhost", "root", "", "centric_project");
 
-		if($this->connection) {
-			echo "Connected";
-		} else {
-			echo "Not Connected";
-		}
+		// if($this->connection) {
+		// 	echo "Connected";
+		// } else {
+		// 	echo "Not Connected";
+		// }
 	} 
 }
 

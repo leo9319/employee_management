@@ -3,6 +3,19 @@
 
 	class Employee extends Database
 	{
+		public function index($table)
+		{
+			$sql = "SELECT * FROM " .$table;
+			$employees = array();
+			$query = mysqli_query($this->connection, $sql);
+			while($row = mysqli_fetch_assoc($query)) {
+				$employees[] = $row;
+			}
+
+			return $employees;
+
+		}
+
 		public function store($table, $fields) {
 			$sql = "";
 			$sql .= "INSERT INTO ".$table;
@@ -13,6 +26,7 @@
 				return true;
 			}
 		}
+
 	}
 
 	$obj = new Employee;
