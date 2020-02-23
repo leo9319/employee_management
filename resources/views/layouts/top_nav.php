@@ -9,11 +9,11 @@
 		    Attendance
 		  </a>
 		  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-		    <a class="dropdown-item" href="#">Add Employee Attendance</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/attendance/index.php">Register Attendance</a>
 		    <a class="dropdown-item" href="#">View Report</a>
 		    <a class="dropdown-item" href="#">Daily Attendance Chart</a>
 		  </div>
 		</span>
-        <a class="p-2 text-dark" href="https://getbootstrap.com/docs/4.0/examples/pricing/#">Salary</a>
+        <a class="p-2 text-dark" href="/centric_project/resources/views/salary/index.php">Salary</a>
     </nav>
 </div>

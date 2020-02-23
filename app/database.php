@@ -12,6 +12,8 @@ class Database
 		// } else {
 		// 	echo "Not Connected";
 		// }
+
+
 	} 
 }
 

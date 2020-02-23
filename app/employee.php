@@ -27,6 +27,18 @@
 			}
 		}
 
+		public function getSalaries()
+		{
+			$sql = "SELECT E.name, S.basic, S.house, S.medical_allowance, S.conveyance, S.food_allowance FROM salaries AS S JOIN employees AS E ON S.employee_id = E.id";
+			$salaries = array();
+			$query = mysqli_query($this->connection, $sql);
+			while($row = mysqli_fetch_assoc($query)) {
+				$salaries[] = $row;
+			}
+
+			return $salaries;
+		}
+
 	}
 
 	$obj = new Employee;
