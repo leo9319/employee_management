@@ -63,7 +63,9 @@
 			"date_joined" => $_POST["date_joined"],
 			"address" => $_POST["address"],
 			"nid" => $_POST["nid"],
-			"emergency_contact" => $_POST["emergency_contact"]
+			"emergency_contact" => $_POST["emergency_contact"],
+			"lat" => $_POST["lat"],
+			"lng" => $_POST["lng"]
 		);
 
 		if($obj->store("employees", $data)) {

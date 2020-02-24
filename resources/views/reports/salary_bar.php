@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Bar Chart</title>
+    <title>Talent Centric | Salary Bar Chart</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -21,9 +21,6 @@
     include '../layouts/footer.php';
 ?>
 
-<?php echo $_POST["month"]; ?>
-
-
 </body>
 
 <?php
@@ -32,32 +29,27 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script>
 
-    var month_data = "<?php echo date('m', strtotime($_POST["month_year"])); ?>";
-    var year_data = "<?php echo date('Y', strtotime($_POST["month_year"])); ?>";
-
     $.ajax({
-        url: "../../../app/bar_data.php",
-        method: "POST",
+        url: "../../../app/salary_data.php",
+        method: "GET",
         dataType:'json',
-        data: ({month: month_data, year: year_data}),
         success: function(data) {
 
-            // console.log(data);
             var employees = [];
-            var attendance_counts = [];
+            var gross_salary = [];
 
             for(var i in data) {
                 employees.push(data[i].name);
-                attendance_counts.push(data[i].total);
+                gross_salary.push(data[i].gross_salary);
             }
 
             var chartdata = {
                 labels: employees,
                 datasets : [
                     {
-                        label: 'Total Attendances This Month',
+                        label: 'Gross Salaries',
                         backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                        data: attendance_counts
+                        data: gross_salary
                     }
                 ]
             };
@@ -75,7 +67,7 @@
                             },
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Days attended'
+                                labelString: 'Gross Salary'
                               }
                         }],
                         xAxes: [{

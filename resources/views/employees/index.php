@@ -32,6 +32,7 @@
                 <th>Address</th>
                 <th>NID</th>
                 <th>Emergency Contact</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -49,6 +50,7 @@
                         <td><?php echo $employee["address"] ?></td>
                         <td><?php echo $employee["nid"] ?></td>
                         <td><?php echo $employee["emergency_contact"] ?></td>
+                        <td><a href="map.php?lat=<?php echo $employee['lat'] ?>&long=<?php echo $employee['lng'] ?>" class="btn btn-info">View Map</a></td>
                     </tr>
                     
             <?php
@@ -66,6 +68,7 @@
                 <th>Address</th>
                 <th>NID</th>
                 <th>Emergency Contact</th>
+                <th>Action</th>
             </tr>
         </tfoot>
     </table>
@@ -135,6 +138,20 @@
                             <div class="form-group">
                                 <label>Address</label>
                                 <textarea name="address" placeholder="Your Address Here..." class="form-control" required rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Latitute</label>
+                                <input type="number" step="0.000001" name="lat" class="form-control" value="23.759960" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Longitute</label>
+                                <input type="number" step="0.000001" name="lng" class="form-control" value="90.383865" required>
                             </div>
                         </div>
                     </div>

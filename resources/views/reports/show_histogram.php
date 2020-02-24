@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Bar Chart</title>
+    <title>Talent Centric | Attendance Histogram</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -21,9 +21,6 @@
     include '../layouts/footer.php';
 ?>
 
-<?php echo $_POST["month"]; ?>
-
-
 </body>
 
 <?php
@@ -32,32 +29,44 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 <script>
 
-    var month_data = "<?php echo date('m', strtotime($_POST["month_year"])); ?>";
-    var year_data = "<?php echo date('Y', strtotime($_POST["month_year"])); ?>";
+	var year = "<?php echo $_POST["year"]; ?>";
 
     $.ajax({
-        url: "../../../app/bar_data.php",
+        url: "../../../app/histogram_data.php",
         method: "POST",
         dataType:'json',
-        data: ({month: month_data, year: year_data}),
+        data: ({ year: year }),
         success: function(data) {
 
-            // console.log(data);
-            var employees = [];
-            var attendance_counts = [];
+            var months = [];
+            var frequency = [];
+            var month = new Array();
+
+			month["01"] = "January";
+			month["02"] = "February";
+			month["03"] = "March";
+			month["04"] = "April";
+			month["05"] = "May";
+			month["06"] = "June";
+			month["07"] = "July";
+			month["08"] = "August";
+			month["09"] = "September";
+			month["10"] = "October";
+			month["11"] = "November";
+			month["12"] = "December";
 
             for(var i in data) {
-                employees.push(data[i].name);
-                attendance_counts.push(data[i].total);
+                months.push(month[[data[i].month]]);
+                frequency.push(data[i].frequency);
             }
 
             var chartdata = {
-                labels: employees,
+                labels: months,
                 datasets : [
                     {
-                        label: 'Total Attendances This Month',
+                        label: 'Histogram Representation',
                         backgroundColor: 'rgba(75, 192, 192, 0.2)',
-                        data: attendance_counts
+                        data: frequency
                     }
                 ]
             };
@@ -75,7 +84,7 @@
                             },
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Days attended'
+                                labelString: 'frequency'
                               }
                         }],
                         xAxes: [{
@@ -84,7 +93,7 @@
                             },
                             scaleLabel: {
                                 display: true,
-                                labelString: 'Names'
+                                labelString: 'months'
                               }
                         }]
                     }

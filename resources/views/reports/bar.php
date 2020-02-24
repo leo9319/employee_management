@@ -21,7 +21,7 @@
                 <div class="col-md-12">
                     <div class="form-group">
                         <label>Select Month</label>
-                        <input type="month" name="month" class="form-control input-sm" required="">
+                        <input type="month" name="month_year" class="form-control input-sm" required="">
                     </div>
                 </div>
                 <button class="btn btn-success btn-block m-3" type="submit" name="submit">Generate</button>

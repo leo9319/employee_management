@@ -12,8 +12,19 @@
 		    <a class="dropdown-item" href="/centric_project/resources/views/attendance/index.php">Register Attendance</a>
 		    <a class="dropdown-item" href="/centric_project/resources/views/reports/index.php">View Daily Report</a>
 		    <a class="dropdown-item" href="/centric_project/resources/views/reports/bar.php">Attendance Bar Chart</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/reports/pie.php">Attendance Pie Chart</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/reports/histogram.php">Attendance Histogram</a>
 		  </div>
 		</span>
-        <a class="p-2 text-dark" href="/centric_project/resources/views/salary/index.php">Salary</a>
+		<span class="dropdown">
+		  <a class="p-2 text-dark dropdown-toggle" type="button" id="salaryDropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Salary
+		  </a>
+		  <div class="dropdown-menu" aria-labelledby="salaryDropdownMenuButton">
+		    <a class="dropdown-item" href="/centric_project/resources/views/salary/index.php">View Salaries</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/reports/salary_bar.php">Salary Chart (Bar)</a>
+		    <a class="dropdown-item" href="/centric_project/resources/views/reports/salary_pie.php">Individial Chart (Pie)</a>
+		  </div>
+		</span>
     </nav>
 </div>
