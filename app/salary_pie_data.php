@@ -4,11 +4,11 @@
 	class SalaryPie extends Database
 	{
 		public function getSalary($employee_id) {
-			$sql = "SELECT S.`basic`, S.`house`, S.`medical_allowance`, S.`conveyance`, S.`food_allowance`
-					FROM `salaries` AS S
+			$sql = "SELECT S.basic, S.house, S.medical_allowance, S.conveyance, S.food_allowance
+					FROM salaries AS S
 					JOIN employees AS E
-					ON E.id = s.`employee_id`
-					WHERE s.`employee_id` = $employee_id
+					ON E.id = S.employee_id
+					WHERE S.employee_id = $employee_id
 					LIMIT 1";
 					
 			$salaries = array();

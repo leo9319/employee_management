@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Attendance</title>
+    <title>Employee Management | Attendance</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -49,11 +49,6 @@
         </form>
     </div>
 </div>
-
-    <?php
-        include '../layouts/footer.php';
-    ?>
-
 
     </body>
     <?php

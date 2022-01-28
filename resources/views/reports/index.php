@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Daily Report</title>
+    <title>Employee Management | Daily Report</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -51,10 +51,6 @@
 
 </div>
 
-
-<?php
-    include '../layouts/footer.php';
-?>
 
 </body>
 <?php

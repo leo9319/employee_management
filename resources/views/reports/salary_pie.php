@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Individual Salary Chart</title>
+    <title>Employee Management | Individual Salary Chart</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -44,11 +44,6 @@
     </div>
 
 </div>
-
-
-<?php
-    include '../layouts/footer.php';
-?>
 
 </body>
 <?php

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Salaries</title>
+    <title>Employee Management | Salaries</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -19,7 +19,7 @@
 ?>
 
 <div class="container">
-    <button type="button" class="btn btn-success mb-2" data-toggle="modal" data-target="#exampleModalCenter">
+    <button type="button" class="btn btn-success mb-2 float-right" data-toggle="modal" data-target="#exampleModalCenter">
       Add Salary
     </button>
 
@@ -67,10 +67,6 @@
             </tr>
         </tfoot>
     </table>
-
-    <?php
-	    include '../layouts/footer.php';
-	?>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

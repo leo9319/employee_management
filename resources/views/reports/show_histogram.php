@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Attendance Histogram</title>
+    <title>Employee Management | Attendance Histogram</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -16,10 +16,6 @@
 	<canvas id="myChart" width="400" height="200"></canvas>
 
 </div>
-
-<?php
-    include '../layouts/footer.php';
-?>
 
 </body>
 

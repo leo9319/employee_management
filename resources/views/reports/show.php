@@ -72,10 +72,6 @@
         </tfoot>
     </table>
 
-    <?php
-        include '../layouts/footer.php';
-    ?>
-
     </body>
     <?php
         require '../layouts/footer_scripts.php';

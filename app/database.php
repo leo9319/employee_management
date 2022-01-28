@@ -5,7 +5,7 @@ class Database
 
 	public function __construct() 
 	{
-		$this->connection = mysqli_connect("localhost", "root", "", "centric_project");
+		$this->connection = mysqli_connect("localhost", "root", "", "employee");
 
 		// if($this->connection) {
 		// 	echo "Connected";

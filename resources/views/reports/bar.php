@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Bar Chart</title>
+    <title>Employee Management | Bar Chart</title>
     <?php
         require '../layouts/header_style.php';
     ?>
@@ -29,11 +29,6 @@
         </form>
     </div>
 </div>
-
-    <?php
-        include '../layouts/footer.php';
-    ?>
-
 
     </body>
     <?php

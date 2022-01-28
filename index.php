@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Talent Centric | Home</title>
+    <title>Employee Management | Home</title>
     <?php
 	    require 'resources/views/layouts/header_style.php';
 	?>
@@ -12,7 +12,7 @@
 ?>
 
 <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4">Project for Tenchical Test</h1>
+    <h1 class="display-4">Demo for Employers</h1>
 </div>
 
 <div class="container">
@@ -28,7 +28,7 @@
                     <li>Can View Address</li>
                     <li>Searchable Data</li>
                 </ul>
-                <a href="/centric_project/resources/views/employees/index.php" class="btn btn-lg btn-block btn-outline-primary">Go to Page</a>
+                <a href="/resources/views/employees/index.php" class="btn btn-lg btn-block btn-outline-primary">Go to Page</a>
             </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -42,7 +42,7 @@
                     <li>Can Add Attendances</li>
                     <li>Tabular Format</li>
                 </ul>
-                <a href="/centric_project/resources/views/attendance/index.php" class="btn btn-lg btn-block btn-outline-success">Go to Page</a>
+                <a href="/resources/views/attendance/index.php" class="btn btn-lg btn-block btn-outline-success">Go to Page</a>
             </div>
         </div>
         <div class="card mb-4 box-shadow">
@@ -56,15 +56,10 @@
                     <li>Can View Salary Distribution</li>
                     <li>Data Entry</li>
                 </ul>
-                <a href="/centric_project/resources/views/salary/index.php" class="btn btn-lg btn-block btn-outline-info">Go to Page</a>
+                <a href="/resources/views/salary/index.php" class="btn btn-lg btn-block btn-outline-info">Go to Page</a>
             </div>
         </div>
     </div>
-
-    <?php
-	    include 'resources/views/layouts/footer.php';
-	?>
-
 </div>
 
 <?php
